@@ -20,6 +20,7 @@ body {
     font-family: 'Josefin Slab', serif;
     border: none;
     padding: 10px;
+    margin: 10px;
     font-weight: bold;
         &:hover{
             background-color: #283C63;}
@@ -89,67 +90,58 @@ p {
 
 //NAVEGADOR SITIO WEB
 
-.header-nav{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color:  #283C63 ;
-    .header-nav__logo {
-        position: relative ;
-        padding: 10px;
-        margin-left: 20px;
+.navHome{
+    background-color: #283C63;
+    .items{
+        color:white;
     }
-    .header-nav__ul {
-        list-style: none;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-end;
-    }
-        .header-nav__ul .header-nav__li {
-            padding: 20px;
-        }
-            .header-nav__ul .header-nav__li .header-nav_li--enlaces{
-                margin-left: 10px;
-                padding-right: 10px;
-                text-decoration: none;
-                display: block;
-                color: white;
-                    &:hover{
-                        color: #F85F73;
-                        font-weight: bold;
-                        text-decoration: underline;}
-            }
 }
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    font-size: 22px;
+    padding: 20px;
+        &:hover{
+            color:#F85F73;
+            font-weight: bold;
+            text-decoration: underline;
+        }
+}
+.navbar-light .navbar-toggler {
+    border: 1px solid #F85F73;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28248, 95, 115, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 
 // sección inicio - welcome
 
 .welcome {
+    background-image: url('/img/home/readingImage.jpg');
+    background-size: cover;
+    background-position: center center;
     margin-bottom: 50px;
-        .welcome__readingImage {
-            filter: blur(1px);
-            background-image: url('/img/home/readingImage.jpg');
-            background-size: cover;
-            background-position: center center;
-            height: 700px;
-            padding-top: 0;
-            margin-top: 0px;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .welcome__bgText{
+            line-height: 1.5;
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+            color: white;
+            align-items: center;
+            justify-content: center;
+            border-style: solid;
+            border-color: white;
+            padding: 0px 20px 0px 20px;
         }
-        .welcome__bgText{
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-        color: white;
-        font-weight: bold;
-        border: 1px solid #f1f1f1;
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 2;
-        width: 70%;
-        padding: 20px;
-        text-align: center;}
+            
+                }
+
+
         
-}
+
 
 // MIXIN Y EXTEND - SASS
 
@@ -181,32 +173,32 @@ p {
 // sección mis trabajos - destacados
 .readingSection {
     width: 70%;
+    background-color: white;
+    border: 2px solid #283C63;
+    border-radius: 10px;
     margin: auto;
     display: grid;
     grid-template-areas: "title title title"
                          "text1 text2 text3"
                          "text1 text2 text3"
-                         "text1 text2 text3"
-                         "more  more  more";
+                         "text1 text2 text3";
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 1fr 3fr;
     grid-gap: 10px;
-    padding:5px;
+    padding:20px;
     margin-bottom: 50px;
     .readingSection__title{
         grid-area: title;
         padding: 10px;
     }
     .readingSection__works1 {
-        @include myworks(text1, url('/img/home/flower.jpeg') )
-        }
-
+        @include myworks (text1, url('/img/home/flower.jpeg'))}
+        
         .readingSection__works1 .readingSection__works1--div{
             @extend .myworks_section;
         }
         .readingSection__works1 .readingSection__works1--div .readingSection__works1--button{
-            @extend .button;
-        }
+            @extend .button;}
 
     .readingSection__works2 {
             @include myworks (text2, url('/img/home/Seaside.jpeg'))}
@@ -223,58 +215,243 @@ p {
                 .readingSection__works3 .readingSection__works3--div{
                     @extend .myworks_section;
                 }
-                }
+                
                 .readingSection__works3 .readingSection__works3--div .readingSection__works3--button{
-                    @extend .button;
-                    
+                    @extend .button;}
 }
 
+.readingSection2 {
+    background-color: white;
+    border: 2px solid #283C63;
+    border-radius: 10px;
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: "title title title"
+                         "text1 text2 text3"
+                         "text1 text2 text3"
+                         "text1 text2 text3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-gap: 10px;
+    padding:20px;
+    margin-bottom: 50px;
+    .readingSection__title{
+        grid-area: title;
+        padding: 10px;
+    }
+    .readingSection__works1 {
+        @include myworks (text1, url('/img/reviews/kingdom_review.jpg'))}
+        
+        .readingSection__works1 .readingSection__works1--div{
+            @extend .myworks_section;
+        }
+        .readingSection__works1 .readingSection__works1--div .readingSection__works1--button{
+            @extend .button;}
 
+    .readingSection__works2 {
+            @include myworks (text2, url('/img/reviews/One_review.jpg'))}
+            
+            .readingSection__works2 .readingSection__works2--div{
+                @extend .myworks_section;
+            }
+            .readingSection__works2 .readingSection__works2--div .readingSection__works2--button{
+                @extend .button;}
+
+     .readingSection__works3 {
+                @include myworks (text3,url('/img/reviews/Shouting_review.jpg'))}
+
+                .readingSection__works3 .readingSection__works3--div{
+                    @extend .myworks_section;
+                }
+                
+                .readingSection__works3 .readingSection__works3--div .readingSection__works3--button{
+                    @extend .button;}
+}
+
+@media only screen and (max-width:780px) {
+    body {
+        font-size: 10px;
+    }
+
+    h1{
+        font-size: 28px !important;
+    }
+
+    h2{
+        font-size: 30px !important;
+    }
+
+    p{
+        font: 10px !important;
+    }
+    .readingSection {
+        width: 70%;
+        background-color: white;
+        border: 2px solid #283C63;
+        border-radius: 10px;
+        margin: auto;
+        display: grid;
+        grid-template-areas: "title  "
+                             "text1  "
+                             "text2  "
+                             "text3  ";
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr 2fr 2fr 2fr;
+        grid-gap: 15px;
+        padding:15px;
+        margin-bottom: 10px;
+            & h2,h3,p {
+                font-size: 18px;
+            }}
+    
+    .readingSection2 {
+            width: 70%;
+            background-color: white;
+            border: 2px solid #283C63;
+            border-radius: 10px;
+            margin: auto;
+            display: grid;
+            grid-template-areas: "title  "
+                                 "text1  "
+                                 "text2  "
+                                 "text3  ";
+            grid-template-columns: 1fr ;
+            grid-template-rows: 1fr 2fr 2fr 2fr;
+            grid-gap: 15px;
+            padding:15px;
+            margin-bottom: 10px;
+                & h2,h3,p {
+                    font-size: 18px;
+            }}
+
+    .footer {
+                h2,h4 {
+            font-size: 12px;}}
+
+    .footer__title{
+                grid-area: title;
+                padding-right: 100px;
+                h2{
+                    font-size: 15px;
+                    color:#F85F73;
+                } 
+    }
+    .aboutMe-section__profile--p{
+        margin:auto;
+        text-align: justify;
+        font-size: 15px;
+             
+        
+    }
+
+}
 
 //footer
 
 .footer {
     background-color:#283C63;
-    color:white;
-    position: relative;
     padding-top: 10px;
     padding-bottom: 10px;
     line-height: 1.5;
-    padding: 50px;
+    display: grid;
+    color:white;
+    
+    grid-template-areas: "title title title"
+                         "title title title"   
+                         "newsletter social contact"
+                         "newsletter social contact";
+       
+
+    .footer__title{
+        grid-area: title;
+        padding-left: 150px;
+        h2{
+            color:#F85F73;
+        }
+       
+
+    }
     .footer__newsletter{
-        padding: 20px;
+        grid-area: newsletter;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+       
+        .button__footer{
+            @extend .button;
+                &:hover {
+                background-color:white;    
+                color:#283C63;
+                } 
+        }
+        
+               
     }
-    .footer__h2{
-        color: #F85F73;
-        text-align: center;
+    .footer__socialNetworks{
+        grid-area: social;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        img{
+            width: 32px;
+        }
+        
+        
+        
     }
-    .footer__a{
-        color: white; 
+    .footer__contactMe{
+        grid-area: contact;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+       
+        a{
+            color:white;
+            text-decoration: none;
+            &:hover{
+                text-decoration:underline;
+                color:#F85F73 ;
+            }
+        }
     }
+ 
+    
 }
 
 //HTML SECTION - ABOUT ME
 
 .aboutMe-section{
     margin-top: 40px;
-
+    background-color: white;
+    width: 70%;
+    padding: 30px 30px 10px 30px;
+    margin: auto;
+    border: 2px solid #283C63;
+    border-radius: 10px;
     .aboutMe-section__profile{
     margin-top: 20px;
     margin-bottom: 50px;
-    display: flex;
+    width: 20%;
     flex-direction: row;
     width: 100%;
     line-height: 2;
     justify-content: center;
-    align-items: center;}
-        .aboutMe-section__profile--img{
-            width:20%;
-            margin-left: 45px;
-            margin-top: 5px; 
-            padding-right: 40px;
-        }
+    align-items: center;
+    text-align: center;
+    
+    }
         .aboutMe-section__profile--p{
-            width: 50%;
+            margin:auto;
+            text-align: justify;
+            font-size: 25px;
+            
+            
         }
 
 }
@@ -293,6 +470,9 @@ p {
     
 }
 
+.myHobbies-section{
+    margin-top: 40px;
+}
 .myHobbies-section__hobbies{
     @include cards;   
     .myHobbies-section__img{
@@ -496,14 +676,14 @@ p {
 
 .shortStories-div{
     background-color: white;
-    width: 60%;
+    width: 70%;
     margin: auto;
     margin-bottom: 20px;
     margin-top: 25px;
     padding: 15px;
     .shortStories-text{
         font-size: 25px;
-        width: 90%;
+        
         line-height: 2;
         margin: auto;
         justify-content: center;

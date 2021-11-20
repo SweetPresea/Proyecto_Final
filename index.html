@@ -19,24 +19,38 @@
 </head>
 
 <body>
-        <header>
-            <nav class="header-nav">
-                <img class="header-nav__logo" src="img/logo/fictionnomad_logo.png" alt="logo">
-                <ul class="header-nav__ul">
-                    <li class="header-nav__li"> <a href="/index.html" class="header-nav_li--enlaces"> Home </a></li>
-                    <li class="header-nav__li"> <a href="/aboutme.html" class="header-nav_li--enlaces"> About Me </a></li>
-                    <li class="header-nav__li"> <a href="/myworks.html" class="header-nav_li--enlaces"> My Works </a></li>
-                    <li class="header-nav__li"> <a href="/reviews.html" class="header-nav_li--enlaces"> Reviews</a></li>
-                    <li class="header-nav__li"> <a href="/contactme.html" class="header-nav_li--enlaces"> Contact Me</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light navHome">
+            <div class="container-fluid items">
+              <a class="navbar-brand" href="#"><img src="/img/logo/fictionnomad_logo.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/aboutme.html">About Me</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/myworks.html">Short Stories</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/reviews.html">Book Reviews</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contactme.html">Contact Me</a>
+                  </li>
                 </ul>
-            </nav>
-        </header>
-    
+            </div>
+        </nav>
+      </header>
     
     <main>
 
         <section class="welcome">
-            <div class="welcome__readingImage"></div>
             <div class="welcome__bgText">
                 <h1 class="welcome__h1"><em>Welcome to my lecture Blog!</em> </h1>
                 <p class="welcome__parrafo"><em> Never Stop Dreaming</em> 🌟 <em>Never Stop Reading</em></p>
@@ -45,14 +59,14 @@
 
         <section class="readingSection">
             <div class="readingSection__title">
-                <h2>Let's start reading!</h2>
-                <h3>The all time favorite Short Stories!</h3>
+                <h2>My latest Short Stories!</h2>
+                <h3>Let's start reading!</h3>
             </div>
         
             <div class="readingSection__works1">  
                 <div class="readingSection__works1--div">
                     <h3 ><em>He Loves me Not</em></h3>
-                    <p >"I was his friend, his confidant, but I craved for more"</p>
+                    <p >"I was his friend, his confidant, but I craved for even more"</p>
                     <button class="readingSection__works1--button"><a href="/shortstories/helovesme.html">Keep reading... </a></button>
                 </div>                
             </div>    
@@ -74,21 +88,57 @@
            
         </section>
 
+        <section class="readingSection2">
+            <div class="readingSection__title">
+                <h2>Check out my Book Reviews!</h2>
+                <h3>And decide which book to read next.</h3>
+            </div>
+        
+            <div class="readingSection__works1">  
+                <div class="readingSection__works1--div">
+                    <h3 ><em>Kingdom of the Wiked by Kerri Maniscalco</em></h3>
+                    <p >Two Sisters. One brutal murder. A quest for vengance.</p>
+                    <button class="readingSection__works1--button"><a href="/myreviews/kingdom.html">Keep reading... </a></button>
+                </div>                
+            </div>    
+
+            <div class="readingSection__works2">  
+                <div class="readingSection__works2--div">
+                    <h3><em>One by Sarah Crossan</em></h3>
+                    <p>Grace and Tippi. Tippi and Grace. Two sisters. Two hearts.Two lives. But one body</p>
+                    <button class="readingSection__works2--button"><a href="/myreviews/one.html">Keep reading... </a></button>
+                </div>
+            </div>     
+            <div class="readingSection__works3">  
+                <div class="readingSection__works3--div">
+                    <h3><em>Shouting at the Rain by Lynda Mullaly</em></h3>
+                    <p>Delsie loves tracking the weather, but she stars to notice changes in the air</p>
+                    <button class="readingSection__works3--button"><a href="/myreviews/rain.html">Keep reading... </a></button>
+                </div>
+            </div>    
+           
+        </section>
+      
+
     </main>
           
-        <footer class="footer">    
-            <h2 class="footer__h2">Fiction Nomad</h2>
-                <div class="footer__newsletter">
-                    <h4>Subscribe to my Newsletter</h4>
-                    <label for="text">Your Name</label>
-                    <input type="text" placeholder="Your Name">
-                    <label for="email"> Email</label>
-                    <input type="email" placeholder="Your">
-                    <input type="submit" name="" id="">
-                </div>
-            <h4 class="footer__h4--socialNetworks">Check my social networks</h4>
-            <h4 class="footer__h4--contactMe"> <a class="footer__a" href="/contactme.html"> Contact Me!</a></h4>     
-        </footer>
+    <footer class="footer"> 
+        <div class="footer__title">
+            <h2>Fiction Nomad</h2>  
+        </div>   
+        <div class="footer__newsletter">
+            <h4>Subscribe to my Newsletter</h4>
+            <input type="email" placeholder="Your Email">
+            <input class="button__footer" type="submit" name="" id="">
+        </div>
+        <div class="footer__socialNetworks">
+            <h4>Check my social network</h4>
+            <a href="https://www.instagram.com/fictionnomad/"><img src="img/icons/instagram.png" alt=""></a>
+        </div>
+        <div class="footer__contactMe" >
+            <h4> <a class="footer__a" href="/contactme.html"> Contact Me</a></h4> 
+        </div>
+    </footer>
     
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
