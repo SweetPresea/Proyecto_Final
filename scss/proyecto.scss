@@ -117,7 +117,7 @@ p {
 // sección inicio - welcome
 
 .welcome {
-    background-image: url('/img/home/readingImage.jpg');
+    background-image: url('../img/home/readingImage.jpg');
     background-size: cover;
     background-position: center center;
     margin-bottom: 50px;
@@ -192,7 +192,7 @@ p {
         padding: 10px;
     }
     .readingSection__works1 {
-        @include myworks (text1, url('/img/home/flower.jpeg'))}
+        @include myworks (text1, url('../img/home/flower.jpeg'))}
         
         .readingSection__works1 .readingSection__works1--div{
             @extend .myworks_section;
@@ -201,7 +201,7 @@ p {
             @extend .button;}
 
     .readingSection__works2 {
-            @include myworks (text2, url('/img/home/Seaside.jpeg'))}
+            @include myworks (text2, url('../img/home/Seaside.jpeg'))}
             
             .readingSection__works2 .readingSection__works2--div{
                 @extend .myworks_section;
@@ -210,7 +210,7 @@ p {
                 @extend .button;}
 
      .readingSection__works3 {
-                @include myworks (text3,url('/img/home/Skull.jpeg'))}
+                @include myworks (text3,url('../img/home/Skull.jpeg'))}
 
                 .readingSection__works3 .readingSection__works3--div{
                     @extend .myworks_section;
@@ -241,7 +241,7 @@ p {
         padding: 10px;
     }
     .readingSection__works1 {
-        @include myworks (text1, url('/img/reviews/kingdom_review.jpg'))}
+        @include myworks (text1, url('../img/reviews/kingdom_review.jpg'))}
         
         .readingSection__works1 .readingSection__works1--div{
             @extend .myworks_section;
@@ -250,7 +250,7 @@ p {
             @extend .button;}
 
     .readingSection__works2 {
-            @include myworks (text2, url('/img/reviews/One_review.jpg'))}
+            @include myworks (text2, url('../img/reviews/One_review.jpg'))}
             
             .readingSection__works2 .readingSection__works2--div{
                 @extend .myworks_section;
@@ -259,7 +259,7 @@ p {
                 @extend .button;}
 
      .readingSection__works3 {
-                @include myworks (text3,url('/img/reviews/Shouting_review.jpg'))}
+                @include myworks (text3,url('../img/reviews/Shouting_review.jpg'))}
 
                 .readingSection__works3 .readingSection__works3--div{
                     @extend .myworks_section;

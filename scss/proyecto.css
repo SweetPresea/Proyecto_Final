@@ -136,7 +136,7 @@ p {
 }
 
 .welcome {
-  background-image: url("/img/home/readingImage.jpg");
+  background-image: url("../img/home/readingImage.jpg");
   background-size: cover;
   background-position: center center;
   margin-bottom: 50px;
@@ -236,7 +236,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("/img/home/flower.jpeg");
+  background-image: url("../img/home/flower.jpeg");
   background-size: cover;
   background-position: center;
 }
@@ -259,7 +259,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("/img/home/Seaside.jpeg");
+  background-image: url("../img/home/Seaside.jpeg");
   background-size: cover;
   background-position: center;
 }
@@ -282,7 +282,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("/img/home/Skull.jpeg");
+  background-image: url("../img/home/Skull.jpeg");
   background-size: cover;
   background-position: center;
 }
@@ -332,7 +332,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("/img/reviews/kingdom_review.jpg");
+  background-image: url("../img/reviews/kingdom_review.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -355,7 +355,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("/img/reviews/One_review.jpg");
+  background-image: url("../img/reviews/One_review.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -378,7 +378,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url("/img/reviews/Shouting_review.jpg");
+  background-image: url("../img/reviews/Shouting_review.jpg");
   background-size: cover;
   background-position: center;
 }
